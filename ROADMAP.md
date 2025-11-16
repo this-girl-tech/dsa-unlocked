@@ -1,4 +1,4 @@
-📍 DSA Roadmap (Beginner → Advanced)
+### 📍 DSA Roadmap (Beginner → Advanced)
 
 A clean, structured roadmap to master Data Structures & Algorithms — even if you're starting from zero.
 
@@ -12,7 +12,7 @@ Create accounts on: LeetCode, GFG, InterviewBit
 
 Install VS Code / JetBrains / Online IDE
 
-🚀 Week 1 — Foundations
+### 🚀 Week 1 — Foundations
 1. Time & Space Complexity
 
 Big-O notation
@@ -43,7 +43,7 @@ Frequency maps
 
 Palindrome basics
 
-🚀 Week 2 — Essential Data Structures
+### 🚀 Week 2 — Essential Data Structures
 1. Linked Lists
 
 Single / Double
@@ -70,7 +70,7 @@ Deque
 
 Queue via stacks
 
-🚀 Week 3 — Hashing + Two Pointers + Sliding Window
+### 🚀 Week 3 — Hashing + Two Pointers + Sliding Window
 1. HashMaps
 
 Counting
@@ -103,7 +103,7 @@ Longest substring without repeating chars
 
 Frequency window patterns
 
-🚀 Week 4 — Recursion + Backtracking + Sorting
+### 🚀 Week 4 — Recursion + Backtracking + Sorting
 1. Recursion
 
 Base case, recursive case
@@ -136,7 +136,7 @@ Search in rotated array
 
 Peak element
 
-🚀 Week 5 — Trees (Very Important)
+### 🚀 Week 5 — Trees (Very Important)
 1. Binary Trees
 
 Preorder / Inorder / Postorder
@@ -158,7 +158,8 @@ Validate BST
 Floor / Ceil
 
 3. Trie (Optional)
-🚀 Week 6 — Graphs
+
+### 🚀 Week 6 — Graphs
 1. Graph Basics
 
 Adjacency list / matrix
@@ -185,66 +186,45 @@ Bipartite graph
 
 Topological sort
 
-🚀 Week 7 — Dynamic Programming (DP)
+### 🚀 Week 7 — Dynamic Programming (DP)
 Start with:
-
 Fibonacci
-
 Climbing stairs
-
 House robber
-
 Knapsack
-
 Subset sum
-
 Longest increasing subsequence (LIS)
-
 Matrix DP
-
 Core DP Skills
-
 Recognizing overlapping subproblems
-
 Memoization
-
 Tabulation
-
 Transition formula
 
-🚀 Week 8 — Interview Patterns
+### 🚀 Week 8 — Interview Patterns
 1. Blind 75 (MUST)
 2. NeetCode 150
 3. Company-specific questions
+   - Amazon
+   - Google
+   - Microsoft
 
-Amazon
+### 🚀 Week 9 — Revision + Mock Interviews
 
-Google
-
-Microsoft
-
-🚀 Week 9 — Revision + Mock Interviews
 1. Problem Revisiting System
-
 Track all problems
-
 Tag: Easy / Medium / Hard
-
 Mark mistakes
-
 Repeat after 7 days / 30 days
-
 2. Mock Interviews
 
-Use platforms:
+### Use platforms:
 
 Pramp
-
 Interviewing.io
-
 LeetCode contests
 
-🎯 Summary Roadmap (Quick View)
+### 🎯 Summary Roadmap (Quick View)
 Week 1 → Arrays, Strings, Complexity  
 Week 2 → LinkedList, Stack, Queue  
 Week 3 → Hashing, Two Pointers, Sliding Window  
@@ -255,16 +235,12 @@ Week 7 → Dynamic Programming
 Week 8 → Patterns + Blind 75  
 Week 9 → Revision + Mock Interviews
 
-📌 Suggestions
+###📌 Suggestions
 
 Solve 2–4 problems/day
-
 Maintain a NOTION or MD file for notes
-
 Keep a revision cycle
-
 Stick to one language
-
 Don’t chase 500+ questions — chase patterns
 
 ### 🌸 Final Note
