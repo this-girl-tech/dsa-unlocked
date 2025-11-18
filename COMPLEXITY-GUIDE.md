@@ -21,7 +21,17 @@ This guide covers the **most important complexity concepts** you must know — w
 **Common Big-O Complexities**
 -----------------------------
 
-ComplexityMeaningExamples**O(1)**ConstantArray index, Hash lookup**O(log n)**Shrinks input each stepBinary search**O(n)**Linear scanSingle loop**O(n log n)**Efficient scalingMerge sort**O(n²)**Double loopsMatrix problems**O(2ⁿ)**All subsetsBacktracking**O(n!)**All permutationsPermutation problems
+
+| Complexity           | Meaning                        | Examples                |
+|----------------------|--------------------------------|-------------------------|
+| O(1)                 | Constant                       |Array index, Hash lookup |
+| O(log n)             | Shrinks input each step        | Binary search           |
+| O(n)                 | Linear scan                    |  Single loop            |
+| O(n log n)           | Efficient scaling              |   Merge sort            |
+| O(n²)                | Double loops                   |   Matrix problems       |
+| O(2ⁿ)                | All subsets                    |   Backtracking          |
+| O(n!)                | All permutations               |    Permutation problems |
+
 
 ⭐ 2. How to Calculate Time Complexity
 =====================================
@@ -41,15 +51,15 @@ ComplexityMeaningExamples**O(1)**ConstantArray index, Hash lookup**O(log n)**Shr
 
 ### **Single Loop**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   for (let i = 0; i < n; i++) {}  // O(n)   `
+`   for (let i = 0; i < n; i++) {}  // O(n)   `
 
 ### **Nested Loops**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   for (let i = 0; i < n; i++)    for (let j = 0; j < n; j++) {}  // O(n²)   `
+`   for (let i = 0; i < n; i++)    for (let j = 0; j < n; j++) {}  // O(n²)   `
 
 ### **Shrinking Input**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   while (n > 1) n /= 2;  // O(log n)   `
+`   while (n > 1) n /= 2;  // O(log n)   `
 
 ⭐ 3. Understanding O(log n)
 ===========================
@@ -69,7 +79,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 **Why it’s extremely fast**
 ---------------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   n → n/2 → n/4 → n/8 → ... → 1    Total steps = log₂(n)   `
+`   n → n/2 → n/4 → n/8 → ... → 1    Total steps = log₂(n)   `
 
 Even for 1,000,000, only ~20 steps.
 
@@ -104,12 +114,19 @@ How much **extra memory** your algorithm uses.
 **Common Space Costs**
 ----------------------
 
-OperationSpaceSwap variables**O(1)**Extra array or DP table**O(n)**HashMap / Set**O(n)**Recursion depth**O(h)**Merge Sort**O(n)**
+| Space                | Operation                      |           
+|----------------------|--------------------------------|
+| O(1)                 | Swap variables                 |
+| O(n)                 | Extra array or DP table        | 
+| O(n)                 | HashMap / Set                  |  
+| O(h)                 | Recursion depth                |   
+| O(n)                 | Merge Sort                     |   
+
 
 **Example**
 -----------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   function fact(n) {    if (n === 0) return 1;    return n * fact(n - 1);  }  // SC = O(n) because recursion uses stack memory   `
+`   function fact(n) {    if (n === 0) return 1;    return n * fact(n - 1);  }  // SC = O(n) because recursion uses stack memory   `
 
 ⭐ 6. Time–Space Trade-Off
 =========================
@@ -142,24 +159,20 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 **Loop Patterns**
 -----------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   for(...)            → O(n)  for inside for      → O(n²)  while(n /= 2)       → O(log n)   `
+`   for(...)            → O(n)  for inside for      → O(n²)  while(n /= 2)       → O(log n)   `
 
 **Recursion Patterns**
 ----------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Divide & Conquer    → O(n log n)  Subsets             → O(2ⁿ)  Permutations        → O(n!)  Tree DFS            → O(n)   `
+`   Divide & Conquer    → O(n log n)  Subsets             → O(2ⁿ)  Permutations        → O(n!)  Tree DFS            → O(n)   `
 
 **Hashing**
 -----------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Insert   → O(1)  Search   → O(1)  Delete   → O(1)   `
+`   Insert   → O(1)  Search   → O(1)  Delete   → O(1)   `
 
-⭐ 9. Sorting Algorithms Overview
-================================
 
-AlgorithmTimeSpaceNotesBubble SortO(n²)O(1)Very slowSelection SortO(n²)O(1)Always n²Insertion SortO(n²)O(1)Best case O(n)Merge SortO(n log n)O(n)StableQuick SortO(n log n)O(log n)Fast averageHeap SortO(n log n)O(1)Space-efficient
-
-⭐ 10. Quick Judge Guide
+⭐ 9. Quick Judge Guide
 =======================
 
 **If your input size is:**
@@ -173,7 +186,7 @@ AlgorithmTimeSpaceNotesBubble SortO(n²)O(1)Very slowSelection SortO(n²)O(1)Alw
 *   n ≥ 10⁷ → O(log n) or O(1) only
     
 
-⭐ 11. Master Heuristics (Remember These)
+⭐ 10. Master Heuristics (Remember These)
 ========================================
 
 *   Shrinking input → **O(log n)**
